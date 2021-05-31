@@ -1,9 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
+import Movies from '../../components/Movies/Movies';
 
-const Home = () => (
-  <div>
-    Home
-  </div>
-);
+const MoviesPage:FC = () => <Movies />;
 
-export default Home;
+export default MoviesPage;

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const PageNotFound = () => (
+const PageNotFound:FC = () => (
   <div>
     404
   </div>

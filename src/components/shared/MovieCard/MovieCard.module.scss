@@ -1,0 +1,52 @@
+.card {
+  border-radius: 1rem;
+  border: .1rem solid gray;
+  margin: 1rem;
+
+  .link {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+
+    img {
+      border-radius: 1rem 1rem 0 0;
+      width: 100%;
+    }
+
+    .info {
+      padding: .5rem;
+
+      .voting {
+        width: 2.5rem;
+        position: absolute;
+        top: -.4rem;
+        background-color: rgba($color: #000000, $alpha: .9);
+        border-radius: 100%;
+
+        text {
+          font-weight: bold;
+        }
+      }
+
+      h4 {
+        width: 100%;
+        margin-bottom: 0;
+      }
+
+      .genres {
+        display: flex;
+        flex-wrap: wrap;
+
+        .genre {
+          border: .1rem solid gray;
+          border-radius: .3rem;
+          margin-right: .3rem;
+          margin-top: .3rem;
+          padding: .2rem;
+          font-size: .9rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

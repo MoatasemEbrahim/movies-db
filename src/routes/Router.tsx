@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import routes from './routes';
 import PageNotFound from '../pages/PageNotFound/PageNotFound';
 
-const Router = () => (
+const Router:FC = () => (
   <Switch>
     {routes.map((route) => (
       <Route
