@@ -16,7 +16,7 @@
     .info {
       padding: .5rem;
 
-      .voting {
+      .rating {
         width: 2.5rem;
         position: absolute;
         top: -.4rem;
@@ -36,16 +36,6 @@
       .genres {
         display: flex;
         flex-wrap: wrap;
-
-        .genre {
-          border: .1rem solid gray;
-          border-radius: .3rem;
-          margin-right: .3rem;
-          margin-top: .3rem;
-          padding: .2rem;
-          font-size: .9rem;
-          font-weight: bold;
-        }
       }
     }
   }

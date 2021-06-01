@@ -1,0 +1,24 @@
+.card {
+  width: 13rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  border: .1rem solid gray;
+  
+  a {
+    color: #000;
+    text-decoration: none;
+
+    img {
+      width: 13rem;
+      border-radius: 1rem 1rem 0 0;
+    }
+  
+    .info {
+      padding: .6rem;
+
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -47,6 +47,7 @@ const Movies:FC = () => {
   }, [moviesFilter, currentPage, moviesGenres]);
 
   const handleFilterChange = (newFilter:MoviesFilter) => () => {
+    if (moviesFilter === newFilter) return;
     setMovies([]);
     setCurrentPage(1);
     setMoviesFilter(newFilter);

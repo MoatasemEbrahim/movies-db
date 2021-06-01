@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import Tag from '../Tag/Tag';
+import Rating from '../Rating/Rating';
 import styles from './MovieCard.module.scss';
 
 const MovieCard:FC<IProps> = ({
@@ -13,19 +14,10 @@ const MovieCard:FC<IProps> = ({
         <h4>{title}</h4>
         <p>{date}</p>
         <div className={styles.genres}>
-          {genres.map((genre) => <span className={styles.genre} key={`${id}-${genre}`}>{genre}</span>)}
+          {genres.map((genre) => <Tag key={`${id}-${genre}`} genre={genre} />)}
         </div>
-        <div className={styles.voting}>
-          <CircularProgressbar
-            value={vote}
-            maxValue={10}
-            text={JSON.stringify(vote)}
-            styles={buildStyles({
-              pathColor: '#21C774',
-              textColor: '#21C774',
-              textSize: '2rem',
-            })}
-          />
+        <div className={styles.rating}>
+          <Rating rating={vote} />
         </div>
       </div>
     </Link>
