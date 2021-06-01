@@ -5,7 +5,7 @@
   background-color: antiquewhite;
 
   button {
-    margin: 0 2rem;
+    margin: 0 1%;
     cursor: pointer;
     height: 2.5rem;
   }
@@ -25,9 +25,9 @@
 
 .movies {
   padding: 0 4rem;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  column-gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .load-more {

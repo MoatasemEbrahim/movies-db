@@ -49,3 +49,20 @@
   display: flex;
   overflow-x: auto;
 }
+
+@media only screen and (max-width: 850px) {
+  .cover {
+    height: 60rem;
+    .head {
+      flex-direction: column;
+      padding: 1rem;
+      height: calc( 100% - 2rem );
+
+      img {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
