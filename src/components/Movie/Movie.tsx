@@ -71,6 +71,7 @@ const Movie:FC = () => {
                   character={character}
                   name={name}
                   profile_path={profile_path}
+                  fallbackImg={posterPath}
                 />
               ))}
             </div>
